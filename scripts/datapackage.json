@@ -1,0 +1,85 @@
+{
+  "name": "scripts",
+  "title": "Scripts",
+  "resources": [
+    {
+      "path": "breakdown.csv",
+      "pathType": "local",
+      "name": "breakdown",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "ISO-8859-1",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "Country",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Year",
+            "type": "year",
+            "format": "default"
+          },
+          {
+            "name": "Area (thousands of km2)",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Population in 2018",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "GDP per capita in 2018",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Population density (inhabitants per km2) in 2017",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Vehicle ownership (per thousand inhabitants) in 2016",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Total Road Deaths in 2018",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Road deaths per Million Inhabitants in 2018",
+            "type": "integer",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "path": "app.js",
+      "pathType": "local",
+      "name": "app",
+      "format": "js",
+      "mediatype": "application/javascript",
+      "encoding": "ISO-8859-1"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "ODC-PDDL",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ]
+}
