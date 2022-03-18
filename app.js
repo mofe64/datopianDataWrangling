@@ -77,7 +77,7 @@ function compare(a, b) {
 const saveToCsvFile = async (data) => {
   const j2cp = new json2csv.Parser();
   const csv = j2cp.parse(data);
-  await fsp.writeFile("./breakdown.csv", csv, { encoding: "utf-8" });
+  await fsp.writeFile("./data/breakdown.csv", csv, { encoding: "utf-8" });
 };
 
 loadData().then(saveToCsvFile);
